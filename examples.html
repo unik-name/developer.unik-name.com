@@ -30,12 +30,14 @@
 
   </head>
 
-  <body>
-    <div class="jumbotron">
-      <h1 class="display-4">@unik-name Connect Examples</h1>
-      <p class="lead">
-        Quickly get a project started with any of our examples ranging from a typical standalone website sign-in to a fully integrated solution into a corporate system environment.
-      </p>
+  <body class="bg-light">
+    <div class="jumbotron jumbotron-fluid bg-primary text-white">
+      <div class="container container-fluid">
+        <h1 class="display-4">@unik-name Connect Examples</h1>
+        <p class="lead">
+          Quickly get a project started with any of our examples ranging from a typical standalone website sign-in to a fully integrated solution into a corporate system environment.
+        </p>
+      </div>
     </div>
     <div class="container">
         <div class="row">
@@ -46,11 +48,11 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row" style="justify-content: space-evenly">
 
             <!-- 1A @unik-name only -->
             <!-- Every time authentication setup (blue) -->
-            <div id="exemple1" class="card col-12 col-lg-6">
+            <div id="exemple1" class="card col-12 col-lg-5">
                 <h5 class="card-header"><b>#1</b> @unik-name only. Simply the simplest !</h5>
                 <div class="card-body">
                 <p>@unik-name Connect can be used as the only way to authenticate. </p>
@@ -66,7 +68,7 @@
             </div>
 
             <!-- 1B alternate to email/password -->
-            <div id="exemple2" class="card col-12 col-lg-6">
+            <div id="exemple2" class="card col-12 col-lg-5">
                 <h5 class="card-header"><b>#2</b> @unik-name as an alternate to email/password.</h5>
                 <div class="card-body">
                 <p>
@@ -84,7 +86,7 @@
             </div>
 
             <!-- 1C @unik-name and Social Authent -->
-            <div id="exemple3" class="card col-12 col-lg-6">
+            <div id="exemple3" class="card col-12 col-lg-5">
             <h5 class="card-header"><b>#3</b> @unik-name and Social Authentication</h5>
             <div class="card-body">
                 <p>
@@ -101,7 +103,7 @@
             </div>
 
             <!-- 1D @unik-name automatic connect -->
-            <div id="exemple4" class="card col-12 col-lg-6">
+            <div id="exemple4" class="card col-12 col-lg-5">
                 <h5 class="card-header"><b>#4</b> @unik-name Automatic Connect</h5>
                 <div class="card-body">
                 <p>@unik-name Connect can be used as the only way to authenticate but also as a very fast and automatic sign-in.</p>
@@ -117,7 +119,7 @@
             </div>
 
             <!-- 2 opensource frameworks -->
-            <div id="example5" class="card col-12 col-lg-6">
+            <div id="example5" class="card col-12 col-lg-5">
                 <h5 class="card-header"><b>#5</b> Opensource framework Integration</h5>
                 <div class="card-body">
                 <p>
@@ -129,43 +131,44 @@
                   Show me the setup
                 </a>
                 <div class="collapse" id="example5-setup">
-                  <div class="card card-body bg-secondary text-white mt-3">
-
-                    <h5>Requirements:</h5>
-                    <ul>
-                      <li>
-                          you must have <a href="https://meta.discourse.org/t/install-plugins-in-discourse/19157"><u>installed</u></a> the <a href="https://github.com/discourse/discourse-openid-connect"><u>oidc plugin</u></a>
-                      </li>
-                      <li> you must be connected as admin </li>
-                    </ul>
-                    <h5>Setup:</h5>
-                    <ol>
-                      <li>Go to your account preferences</li>
-                      <li>Then in admin pannel</li>
-                      <li>And finally in site settings (Settings tab)</li>
-                      <li>look for <code>openid connect</code> settings <i>(a.k.a oidc)</i></li>
-                      <li><code>oidc enabled</code>: check the box</li>
-                      <li><code>oidc discovery document</code>: https://auth.alza.unik-name.io/oidc/.well-known</li>
-                      <li><code>oidc client id</code>: generate and fill the input</li>
-                      <li><code>oidc client secret</code>: generate and fill the input</li>
-                      <li><code>oidc authorize scope</code>: keep openid only</li>
-                      <li>
-                        Finally, <a href="mailto:developers@spacelephant.org">email us</a> your 
-                        <ul>
-                          <li><code>client id</code></li>
-                          <li><code>client secret</code></li>
-                          <li>forum url</li>
-                        </ul>
-                        We'll add your site to our service providers list and ping as soon as it's done.
-                      </li>
-                    </ol>
+                  <div class="card bg-secondary text-white mt-3">
+                    <div class="card-body">
+                      <h5>Requirements:</h5>
+                      <ul>
+                        <li>
+                            you must have <a href="https://meta.discourse.org/t/install-plugins-in-discourse/19157"><u>installed</u></a> the <a href="https://github.com/discourse/discourse-openid-connect"><u>oidc plugin</u></a>
+                        </li>
+                        <li> you must be connected as admin </li>
+                      </ul>
+                      <h5>Setup:</h5>
+                      <ol>
+                        <li>Go to your account preferences</li>
+                        <li>Then in admin pannel</li>
+                        <li>And finally in site settings (Settings tab)</li>
+                        <li>look for <code>openid connect</code> settings <i>(a.k.a oidc)</i></li>
+                        <li><code>oidc enabled</code>: check the box</li>
+                        <li><code>oidc discovery document</code>: https://auth.alza.unik-name.io/oidc/.well-known</li>
+                        <li><code>oidc client id</code>: generate and fill the input</li>
+                        <li><code>oidc client secret</code>: generate and fill the input</li>
+                        <li><code>oidc authorize scope</code>: keep openid only</li>
+                        <li>
+                          Finally, <a href="mailto:developers@spacelephant.org">email us</a> your 
+                          <ul>
+                            <li><code>client id</code></li>
+                            <li><code>client secret</code></li>
+                            <li>forum url</li>
+                          </ul>
+                          We'll add your site to our service providers list and ping as soon as it's done.
+                        </li>
+                      </ol>
+                    </div>
                   </div>
                 </div>
             </div>
             </div>
 
             <!-- 3 cloud intergation -->
-            <div id="example6" class="card col-12 col-lg-6">
+            <div id="example6" class="card col-12 col-lg-5">
                 <h5 class="card-header"><b>#6</b> Corporate cloud Integration</h5>
                 <div class="card-body">
                 <p>
@@ -178,7 +181,7 @@
             </div>
 
             <!-- 4 on-premise intergation -->
-            <div id="example7" class="card col-12 col-lg-6">
+            <div id="example7" class="card col-12 col-lg-5">
                 <h5 class="card-header"><b>#7</b> Private/on-premise system Integration</h5>
                 <div class="card-body">
                 <p>
@@ -191,7 +194,7 @@
             </div>
 
             <!-- 5 online store -->
-            <div id="example8" class="card col-12 col-lg-6">
+            <div id="example8" class="card col-12 col-lg-5">
                 <h5 class="card-header"><b>#8</b> Account management for Online platforms eg. eCommerce</h5>
                 <div class="card-body">
                 <p>
@@ -201,18 +204,18 @@
                 <!-- <a href="#" class="btn btn-primary" target="_blank" rel="noopener">Coming Soon</a> -->
                 </div>
             </div>
+          </div>
 
-            <div class="col">
-                <hr class="my-4" />
-                <p>To restart the demo from scratch you need to <a href="#" role="button">disconnect your @unik-name</a> and <a href="#" role="button">sign-out from platform101</a></p>
-                <hr class="my-4" />
+            <div class="row" style="justify-content: center">
+              <div class="card">
+                <div class="card-body">
+                  To restart the demo from scratch you need to <a href="#" role="button">disconnect your @unik-name</a> and <a href="#" role="button">sign-out from platform101</a>
+                </div>
+              </div>
             </div>
-        </div>
     </div>
-    <footer>
-      <p>
-      <a href="http://www.unik-name.com" target="_blank">unik-name.com</a>&nbsp;|&nbsp;<a href="/">unik-name Connect</a>
-    </p>
+  <footer class="bg-primary text-white p-3">
+    <a href="http://www.unik-name.com" target="_blank">unik-name.com</a>&nbsp;|&nbsp;<a href="/">unik-name Connect</a>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fzFFyH01cBVPYzl16KT40wqjhgPtq6FFUB6ckN2+GGw=" crossorigin="anonymous"></script>

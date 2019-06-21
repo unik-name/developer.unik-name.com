@@ -1,13 +1,17 @@
+.lead{
+  font-weight: lighter;
+}
+
 .card {
   margin-bottom: 1rem;
-  border: none;
+  padding:0;
 }
 
 footer {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-decoration: inherit;
 }
 
 footer a,
@@ -15,8 +19,7 @@ footer a:active,
 footer a:hover,
 footer a:focus,
 footer a:visited {
-  color: #000;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 code {
