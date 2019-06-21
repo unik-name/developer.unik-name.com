@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
+
   </head>
 
   <body>
@@ -124,11 +125,42 @@
                 <p>
                 In this example, our discussion forum website is based on the famous open source <b>Discourse</b> solution. @unik-name users are automaticaly signed-in for an optimal user experience.</p>
                 <a href="https://forum.unik-name.com" class="btn btn-primary" target="_blank" rel="noopener">Demo #5</a>
-                <!-- <a href="#" class="btn btn-primary" target="_blank" rel="noopener">
-                  <i class="fab fa-github"></i>
+                <a class="btn btn-primary" data-toggle="collapse" href="#example5-setup" role="button" aria-expanded="false" aria-controls="example5-setup">
                   Show me the setup
-                </a> -->
-                <!-- ajouter exemple de code-->
+                </a>
+                <div class="collapse" id="example5-setup">
+                  <div class="card card-body bg-secondary text-white mt-3">
+
+                    <h5>Requirements:</h5>
+                    <ul>
+                      <li>
+                          you must have <a href="https://meta.discourse.org/t/install-plugins-in-discourse/19157"><u>installed</u></a> the <a href="https://github.com/discourse/discourse-openid-connect"><u>oidc plugin</u></a>
+                      </li>
+                      <li> you must be connected as admin </li>
+                    </ul>
+                    <h5>Setup:</h5>
+                    <ol>
+                      <li>Go to your account preferences</li>
+                      <li>Then in admin pannel</li>
+                      <li>And finally in site settings (Settings tab)</li>
+                      <li>look for <code>openid connect</code> settings <i>(a.k.a oidc)</i></li>
+                      <li><code>oidc enabled</code>: check the box</li>
+                      <li><code>oidc discovery document</code>: https://auth.alza.unik-name.io/oidc/.well-known</li>
+                      <li><code>oidc client id</code>: generate and fill the input</li>
+                      <li><code>oidc client secret</code>: generate and fill the input</li>
+                      <li><code>oidc authorize scope</code>: keep openid only</li>
+                      <li>
+                        Finally, <a href="mailto:developers@spacelephant.org">email us</a> your 
+                        <ul>
+                          <li><code>client id</code></li>
+                          <li><code>client secret</code></li>
+                          <li>forum url</li>
+                        </ul>
+                        We'll add your site to our service providers list and ping as soon as it's done.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
             </div>
             </div>
 
@@ -182,5 +214,7 @@
       <a href="http://www.unik-name.com" target="_blank">unik-name.com</a>&nbsp;|&nbsp;<a href="/">unik-name Connect</a>
     </p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fzFFyH01cBVPYzl16KT40wqjhgPtq6FFUB6ckN2+GGw=" crossorigin="anonymous"></script>
   </body>
 </html>

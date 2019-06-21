@@ -18,3 +18,15 @@ footer a:visited {
   color: #000;
   text-decoration: none;
 }
+
+code {
+  color: #ffc107
+}
+
+a:not(.btn){
+  text-decoration: underline;
+  color: inherit;
+}
+a:not(.btn):hover {
+  color:#cecece;
+}
